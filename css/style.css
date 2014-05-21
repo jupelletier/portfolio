@@ -1,3 +1,9 @@
+.animation {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
 * {
   margin: 0;
   padding: 0;
@@ -107,7 +113,7 @@ header {
   top: 0;
   left: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  z-index: 20;
+  z-index: 50;
 }
 header .inner {
   text-align: center!important;
@@ -228,10 +234,10 @@ header .contact:hover {
   color: #2C353C;
   border-color: #2C353C;
   font-weight: bold;
-  border-width: 2px;
+  border-width: 1px;
   opacity: 0.7;
 }
-#bio a:after {
+#bio a.custom-link:after {
   background: url(../images/arrow-right-black.svg) no-repeat;
 }
 /* Work list
@@ -244,14 +250,10 @@ header .contact:hover {
   display: block;
   float: left;
   list-style: none;
-  width: 470px;
+  width: 495px;
   height: 240px;
   color: white;
   position: relative;
-  margin-bottom: 50px;
-}
-#work-list li:nth-child(2n) {
-  margin-left: 50px;
 }
 #work-list a {
   color: white;
@@ -313,32 +315,60 @@ header .contact:hover {
   transition: all 0.15s ease-in-out;
 }
 #work-list .cookening a {
-  background: url(../images/work-list-cookening.jpg) 50% 50% no-repeat;
-  background-size: 100%;
+  background: url(../images/work-list-cookening.png) 300px 30px no-repeat #fa204a;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 #work-list .cookening a:hover {
-  background: url(../images/work-list-cookening.jpg) 50% 50% no-repeat;
-  background-size: 108%;
+  background-position-x: 280px;
+  background-color: #EB0E39;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 #work-list .lec a {
-  background: url(../images/work-list-lec.jpg) 50% 50% no-repeat;
-  background-size: 100%;
+  background: url(../images/work-list-lec.png) 300px 30px no-repeat #00a1e6;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 #work-list .lec a:hover {
-  background: url(../images/work-list-lec.jpg) 50% 50% no-repeat;
-  background-size: 108%;
+  background-position-x: 280px;
+  background-color: #0092D1;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#work-list .liive a {
+  background: url(../images/work-list-liive.png) 280px 40px no-repeat #03c78b;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#work-list .liive a:hover {
+  background-position-y: 20px;
+  background-color: #00B880;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#work-list .tmc a {
+  background: url(../images/work-list-tmc.png) 280px 40px no-repeat #ffbb33;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+#work-list .tmc a:hover {
+  background-position-y: 20px;
+  background-color: #F9AB0E;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -347,35 +377,27 @@ header .contact:hover {
 #work-list .lec img {
   top: 90px;
 }
-#work-list a:hover:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(50, 50, 50, 0.3);
-  z-index: 10;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-}
-#work-list .liive {
-  background: #00BFFF;
-}
-#work-list .tmc {
-  background: #FF925F;
-}
 /* Cookening
 **************************************************/
 #cookening-banner {
-  margin-top: 80px;
-  height: 400px;
-  background: url(../images/fullpage-banner-cookening.jpg) 50% 50% no-repeat;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+#cookening-banner video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+#cookening-banner img {
+  margin-top: 180px;
+  position: relative;
+  z-index: 30;
 }
 #cookening p {
   margin-bottom: 2em;

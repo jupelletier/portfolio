@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Julien Pelletier -  Trouver-mon-comptable.com</title>
+		
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../js/masonry.js"></script>
+		<script src="../js/script.js"></script>
+
+		<meta name="viewport" content="width=1100">
+
+	</head>
+
+	<body id="tmc">
+		<header>
+			<div class="inner">
+				<a href="/" id="back-home">
+					<h1>Julien Pelletier</h1>
+					<br />
+					<h2>product designer</h2>
+				</a>
+				<a href="mailto:contact@julien-pelletier.fr" class="custom-link contact">contact</a>
+			</div>
+		</header>
+		<section id="cookening-banner">
+			<video autoplay="true" loop id="parallax">
+			  <source src="../video/cookening.m4v" type="video/mp4" />
+			</video>
+			<img src="images/tmc.png" width="400" id="parallaxImage" />
+		</section>
+		<section>
+			<div class="inner-small">
+				<p>Le groupe d'expertise comptable pour lequel j'ai travaillé a pratiqué une politique d'acquisition très agressive en matière de SEO et de SEM. Il en résulte un nombre important de leads généré chaque jour.<br />
+				Avec mon équipe, nous avons conçu des outils permettant d'accélérer la gestion, la qualification et parfois la revente des leads obtenues.</p>
+			</div>
+		</section>
+		<section id="tmc-marketplace">
+			<div class="inner">
+				<h2>TMC Lead Marketplace</h2>
+				<p>Il s'agit d'une plate-forme destinée à être utilisée par les collaborateurs du groupe afin de pouvoir en temps réel suivre l'arrivée de nouvelle leads et ainsi les rappeler immédiatement et les transférer à un expert-comptable correspondant.</p>
+				<img src="images/tmc-marketplace.png" width="996" height="946" />
+			</div>
+		</section>
+		<section id="tmc-mobile-hero">
+			<div class="inner">
+				<h2>Mobile application</h2>
+				<p>Une application mobile à également été créée à destination des experts-comptables partenaires. Ils peuvent consulter les informations concernant leurs prospects, les rendez-vous qu'ils leur ont été attribués ainsi que la satisfaction de leurs clients.</p>
+				<img src="images/tmc-mobile-hero.png" width="490" height="403" />
+			</div>
+		</section>
+		<section id="tmc-mobile-prototype">
+			<div class="inner">
+				<h2>Prototyping</h2>
+				<p>Très peu de temps a été attribué à la conception de l'application mobile. Afin de rapidement nous donner un aperçu de l'application, j'ai utilisé Flinto et créé un prototype mobile à partir de mes mockups statiques.</p>
+				<p><a href="https://www.flinto.com/p/828ad137" target="_blank" class="custom-link">voir le prototype</a></p>
+				<img src="images/tmc-mobile-prototype.png" width="573" height="329" />
+			</div>
+		</section>
+		<section id="tmc-mobile-details">
+			<div class="inner">
+				<img src="images/tmc-mobile-details-1.png" width="220" height="345" id="tmc-mobile-details-1" />
+				<img src="images/tmc-mobile-details-2.png" width="220" height="345" id="tmc-mobile-details-2" />
+				<img src="images/tmc-mobile-details-3.png" width="220" height="345" id="tmc-mobile-details-3" />
+			</div>
+		</section>
+
+		
+
+		<section id="role">
+			<div class="inner">
+				<p>Role : Product designer</p>
+			</div>
+		</section>
+
+		<footer class="inner">
+			<ul>
+				<li><a href="http://www.twitter.com/jupelletier">Twitter</a></li>
+				<li><a href="mailto:contact@julien-pelletier.fr">Contact</a></li>
+				<li><a href="http://www.dribbble.com/jupelletier">Dribbble</a></li>
+				<li><a href="http://www.linkedin.com/in/jupelletier">Linkedin</a></li>
+			</ul>
+			© Julien Pelletier, 2014
+		</footer>
+
+		<script>
+			var parallax = document.getElementById("parallax");
+			var parallaxImage = document.getElementById("parallaxImage");
+			var speed = -2;
+
+			window.onscroll = function() {
+			  var yOffset = window.pageYOffset;
+			  parallax.style.top = (yOffset / speed) + "px";
+			  parallaxImage.style.opacity = 15 / (Math.abs(yOffset) + 1);
+			}
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-48757228-1', 'julien-pelletier.fr');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</body>
+</html>

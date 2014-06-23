@@ -1,3 +1,10 @@
+.animation{
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -67,21 +74,15 @@ a.custom-link{
 	text-decoration: none;
 	border: 1px solid #aaa;
 	border-radius: 40px;
-	padding: .3em 1.2em;
+	padding: .2em 1.2em .3em 1.2em;
 	font-weight: 300;
 	position: relative;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 a.custom-link:hover{
-	padding: .3em 3em .3em 1.2em;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	padding: .2em 3em .3em 1.2em;
+	.animation();
 }
 
 a.custom-link:after{
@@ -96,19 +97,13 @@ a.custom-link:after{
 	margin-top: -6px;
 	margin-left: -4px;
 	opacity: 0;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 a.custom-link:hover:after{
 	right: 1.2em;
 	opacity: 1;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 /* Header
@@ -121,7 +116,7 @@ header{
 	top: 0;
 	left: 0;
 	box-shadow: 0 1px 3px rgba(0,0,0,.15);
-	z-index: 20;
+	z-index: 1000;
 	.inner{
 		text-align: center!important;
 	}
@@ -131,10 +126,7 @@ header{
 		display: inline-block;
 		line-height: 1em;
 		&:hover h1, &:hover h2{
-			-webkit-transition: all 0.15s ease-in-out;
-			-moz-transition: all 0.15s ease-in-out;
-			-o-transition: all 0.15s ease-in-out;
-			transition: all 0.15s ease-in-out;
+			.animation();
 			opacity: 0;
 		}
 	}
@@ -156,19 +148,13 @@ header #back-home:after{
 	border-radius: 50px;
 	background-size: 16px 16px;
 	opacity: 0;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 header #back-home:hover:after{
 	opacity: 1;	
 	background-size: 24px 24px;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 } 
 
 header h1{
@@ -177,10 +163,7 @@ header h1{
 	margin: 0 0 5px;
 	opacity: 1;
 	display: inline-block;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 header h2{
@@ -189,10 +172,7 @@ header h2{
 	margin: 0;
 	opacity: 1;
 	display: inline-block;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 header .contact{
@@ -221,41 +201,35 @@ header .contact:hover{
 	-moz-background-size: cover; /* pour Firefox */
 	-o-background-size: cover; /* pour Opera */
 	background-size: cover; /* version standardisée */
-}
-
-#bio h1{
-	line-height: 1.6em;
-}
-
-#bio .content{
-	width: 40%;
-}
-
-#bio .credit{
-	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
-	color: #888;	
-	position: absolute;
-	bottom: 5px;
-	right: 10px;
-	margin-bottom: 0;
-}
-
-#bio .credit a{
-	color: #888;
-}
-
-#bio a.custom-link{
-	margin-top: 10px;
-	color: #2C353C;
-	border-color: #2C353C;
-	font-weight: bold;
-	border-width: 2px;
-	opacity: 0.7;
-}
-
-#bio a:after{
-	background: url(../images/arrow-right-black.svg) no-repeat;
+	h1{
+		line-height: 1.6em;
+	}
+	.content{
+		width: 40%;
+	}
+	.credit{
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		color: #888;	
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+		margin-bottom: 0;
+		a{
+			color: #888;
+		}
+	}
+	a.custom-link{
+		margin-top: 10px;
+		color: #2C353C;
+		border-color: #2C353C;
+		font-weight: bold;
+		border-width: 1px;
+		opacity: 0.7;
+		&:after{
+			background: url(../images/arrow-right-black.svg) no-repeat;
+		}
+	}
 }
 
 /* Work list
@@ -269,15 +243,14 @@ header .contact:hover{
 	display: block;
 	float: left;
 	list-style: none;
-	width: 470px;
+	width: 495px;
 	height: 240px;
 	color: white;
 	position: relative;
-	margin-bottom: 50px;
 }
 
 #work-list li:nth-child(2n){
-	margin-left: 50px;
+	
 }
 
 #work-list a{
@@ -304,18 +277,12 @@ header .contact:hover{
 	top: 140px;
 	left: 30px;
 	z-index: 30;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #work-list a:hover span{
 	padding: .3em 3em .3em 1.2em;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #work-list a span:after{
@@ -330,85 +297,67 @@ header .contact:hover{
 	margin-top: -5px;
 	margin-left: -4px;
 	opacity: 0;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #work-list a:hover span:after{
 	right: 1.2em;
 	opacity: 1;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #work-list .cookening a{
-	background: url(../images/work-list-cookening.jpg) 50% 50% no-repeat;
-	background-size: 100%;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	background: url(../images/work-list-cookening.png) 300px 30px no-repeat #FA204A;
+	.animation();
+	&:hover{
+		background-position-x: 280px;
+		background-color: #EB0E39;
+		.animation();
+	}
 }
-
-#work-list .cookening a:hover{
-	background: url(../images/work-list-cookening.jpg) 50% 50% no-repeat;
-	background-size: 108%;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
-}
-
 #work-list .lec a{
-	background: url(../images/work-list-lec.jpg) 50% 50% no-repeat;
-	background-size: 100%;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	background: url(../images/work-list-lec.png) 300px 30px no-repeat #00A1E6;
+	.animation();
+	&:hover{
+		background-position-x: 280px;
+		background-color: #0092D1;
+		.animation();
+	}
 }
 
-#work-list .lec a:hover{
-	background: url(../images/work-list-lec.jpg) 50% 50% no-repeat;
-	background-size: 108%;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+#work-list .liive a{
+	background: url(../images/work-list-liive.png) 280px 40px no-repeat #03C78B;
+	.animation();
+	&:hover{
+		background-position-y: 20px;
+		background-color: #00B880;
+		.animation();
+	}
 }
+
+#work-list .tmc a{
+	background: url(../images/work-list-tmc.png) 280px 40px no-repeat #FFBB33;
+	.animation();
+	&:hover{
+		background-position-y: 20px;
+		background-color: #F9AB0E;
+		.animation();
+	}
+}
+
+
+<<<<<<< HEAD
+#work-list .liive{
+	background: #00BFFF;
+} 
+=======
 
 #work-list .lec img{
 	top: 90px;
 }
-
-#work-list a:hover:after{
-	content:'';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(50,50,50,.3);
-	z-index: 10;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
-}
-
-#work-list .liive{
-	background: #00BFFF;
-} 
+>>>>>>> master
 
 
-#work-list .tmc{
-	background: #FF925F;
-}
 
 
 
@@ -416,11 +365,24 @@ header .contact:hover{
 **************************************************/
 
 #cookening-banner{
-	margin-top: 80px;
-	height: 400px;
-	background: url(../images/fullpage-banner-cookening.jpg) 50% 50% no-repeat;
+	height: 480px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	margin-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+	video{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 20;
+	}
+	img{
+		margin-top: 180px;
+		position: relative;
+		z-index: 30;
+	}
 }
 
 #cookening p{
@@ -537,6 +499,114 @@ header .contact:hover{
 	z-index: 10;
 }
 
+/* TMC
+*************************************************/
+
+#tmc{
+	#tmc-marketplace{
+		padding-top: 60px;
+		background: #f5f5f5;
+		margin-top: 40px;
+		padding-bottom: 100px;
+		h2{
+			margin-bottom: 40px;
+		}
+		p{
+			width: 500px;
+			margin: 0 auto 2em;
+		}
+		#tmc-marketplace-details{
+			overflow: auto;
+			li{
+				display: block;
+				float: left;
+				margin-bottom: 20px;
+				&:nth-child(2n){
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	#tmc-mobile-hero{
+		color: white;
+		text-align: left;
+		background: #FF7D40;
+		padding: 40px 0;
+		z-index: 500;
+		position: relative;
+		min-height: 250px;
+		.inner{
+			position: relative;
+		}
+		h2{
+			color: white;
+			text-align: left;
+		}
+		p{
+			width: 510px;
+		}
+		img{
+			position: absolute;
+			top: -90px;
+			right: 0;
+		}
+	}
+	#tmc-mobile-prototype{
+		color: white;
+		text-align: left;
+		background: url('../tmc/images/tmc-prototype-background.png');
+		padding: 95px 0;
+		color: #48636E;
+		position: relative;
+		overflow: hidden;
+		z-index: 300;
+		h2{
+			margin-bottom: 30px;
+			text-align: left;
+			color: #48636E;
+		}
+		p{
+			width: 480px;
+		}
+		a{
+			background: rgba(255,255,255,.5);
+		}
+		img{
+			position: absolute;
+			top: 40px;
+			right: -40px;
+			box-shadow: 0 1px 3px rgba(0,0,0,.25);
+		}
+	}
+	#tmc-mobile-details{
+		background: #333;
+		.inner{
+			position: relative;
+			height: 385px;
+		}
+		img{
+			display: block;
+		}
+		#tmc-mobile-details-1{
+			position: absolute;
+			bottom: 0;
+			left: 40px;
+		}
+		#tmc-mobile-details-2{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -110px;
+		}
+		#tmc-mobile-details-3{
+			position: absolute;
+			bottom: 0;
+			right: 40px;
+		}
+	}
+}
+
+
 /* Role
 *************************************************/
 #role .inner{
@@ -565,18 +635,12 @@ header .contact:hover{
 	padding: .3em 1.2em;
 	font-weight: 300;
 	position: relative;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #role a:hover{
 	padding: .3em 3em .3em 1.2em;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #role a:after{
@@ -591,19 +655,13 @@ header .contact:hover{
 	margin-top: -6px;
 	margin-left: -4px;
 	opacity: 0;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #role a:hover:after{
 	right: 1.2em;
 	opacity: 1;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 /* Footer
@@ -647,18 +705,12 @@ header .contact:hover{
 	padding: .3em 1.2em;
 	font-weight: 300;
 	position: relative;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #social-links a:hover span{
 	padding: .3em 3em .3em 1.2em;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #social-links span:after{
@@ -673,19 +725,13 @@ header .contact:hover{
 	margin-top: -5px;
 	margin-left: -4px;
 	opacity: 0;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 #social-links a:hover span:after{
 	right: 1.2em;
 	opacity: 1;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+	.animation();
 }
 
 footer{

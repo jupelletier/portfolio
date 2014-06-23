@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Julien Pelletier</title>
+		<title>Julien Pelletier - Cookening</title>
 		
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
 
@@ -12,6 +12,8 @@
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="../js/masonry.js"></script>
 		<script src="../js/script.js"></script>
+
+		<meta name="viewport" content="width=1100">
 
 	</head>
 
@@ -26,7 +28,12 @@
 				<a href="mailto:contact@julien-pelletier.fr" class="custom-link contact">contact</a>
 			</div>
 		</header>
-		<section id="cookening-banner"></section>
+		<section id="cookening-banner">
+			<video autoplay="true" loop id="parallax">
+			  <source src="../video/cookening.m4v" type="video/mp4" />
+			</video>
+			<img src="images/cookening.png" width="400" id="parallaxImage" />
+		</section>
 		<section class="inner-small">
 			<p>We created Cookening in order to let anyone organize or take part in meals at a local’s home all around the world. We believe this is a great way for travelers to discover new flavours and meet people.</p>
 			<p>I co-founded Cookening with Cédric Giorgi (CEO) and Sébastien Guignot (CTO). In september 2013 we acquiered one of our main french competitor : Beyond Croissant.</p>
@@ -73,6 +80,18 @@
 			</ul>
 			© Julien Pelletier, 2014
 		</footer>
+
+		<script>
+			var parallax = document.getElementById("parallax");
+			var parallaxImage = document.getElementById("parallaxImage");
+			var speed = -2;
+
+			window.onscroll = function() {
+			  var yOffset = window.pageYOffset;
+			  parallax.style.top = (yOffset / speed) + "px";
+			  parallaxImage.style.opacity = 15 / (Math.abs(yOffset) + 1);
+			}
+		</script>
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

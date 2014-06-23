@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16921",
+"creatorBuild": "17018",
 "files": {
 	"\/bower_components\/less.js\/dist\/less-1.1.0.js": {
 		"fileType": 64,
@@ -913,7 +913,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1069,
+		"initialSize": 1143,
 		"inputAbbreviatedPath": "\/favicon.png",
 		"outputAbbreviatedPath": "\/favicon.png",
 		"outputPathIsOutsideProject": 0,
@@ -924,7 +924,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 164624,
+		"initialSize": 428000,
 		"inputAbbreviatedPath": "\/images\/fullpage-banner-cookening.jpg",
 		"outputAbbreviatedPath": "\/images\/fullpage-banner-cookening.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1245,6 +1245,136 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/tmc\/images\/tmc-marketplace-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8189,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-1.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-marketplace-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-2.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-marketplace-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11178,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-3.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-marketplace-4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29469,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-4.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-marketplace-4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-mobile-details-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40348,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-1.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-mobile-details-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63189,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-2.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-mobile-details-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36110,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-3.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-details-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-mobile-hero.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137251,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-hero.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-hero.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-mobile-prototype.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107390,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-prototype.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-mobile-prototype.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc-prototype-background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2785,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc-prototype-background.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc-prototype-background.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/images\/tmc.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14403,
+		"inputAbbreviatedPath": "\/tmc\/images\/tmc.png",
+		"outputAbbreviatedPath": "\/tmc\/images\/tmc.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmc\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/tmc\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -1315,10 +1445,6 @@
 			"active": 0,
 			"flagValue": 3
 			},
-		"no-unnecessary_fat_arrows": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"no_backticks": {
 			"active": 1,
 			"flagValue": -1
@@ -1373,6 +1499,10 @@
 			},
 		"no_unnecessary_double_quotes": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"non_empty_constructor_needs_parens": {

@@ -74,14 +74,14 @@ a.custom-link{
 	text-decoration: none;
 	border: 1px solid #aaa;
 	border-radius: 40px;
-	padding: .3em 1.2em;
+	padding: .2em 1.2em .3em 1.2em;
 	font-weight: 300;
 	position: relative;
 	.animation();
 }
 
 a.custom-link:hover{
-	padding: .3em 3em .3em 1.2em;
+	padding: .2em 3em .3em 1.2em;
 	.animation();
 }
 
@@ -116,7 +116,7 @@ header{
 	top: 0;
 	left: 0;
 	box-shadow: 0 1px 3px rgba(0,0,0,.15);
-	z-index: 50;
+	z-index: 1000;
 	.inner{
 		text-align: center!important;
 	}
@@ -492,6 +492,114 @@ header .contact:hover{
 	margin-bottom: 40px;
 	z-index: 10;
 }
+
+/* TMC
+*************************************************/
+
+#tmc{
+	#tmc-marketplace{
+		padding-top: 60px;
+		background: #f5f5f5;
+		margin-top: 40px;
+		padding-bottom: 100px;
+		h2{
+			margin-bottom: 40px;
+		}
+		p{
+			width: 500px;
+			margin: 0 auto 2em;
+		}
+		#tmc-marketplace-details{
+			overflow: auto;
+			li{
+				display: block;
+				float: left;
+				margin-bottom: 20px;
+				&:nth-child(2n){
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	#tmc-mobile-hero{
+		color: white;
+		text-align: left;
+		background: #FF7D40;
+		padding: 40px 0;
+		z-index: 500;
+		position: relative;
+		min-height: 250px;
+		.inner{
+			position: relative;
+		}
+		h2{
+			color: white;
+			text-align: left;
+		}
+		p{
+			width: 510px;
+		}
+		img{
+			position: absolute;
+			top: -90px;
+			right: 0;
+		}
+	}
+	#tmc-mobile-prototype{
+		color: white;
+		text-align: left;
+		background: url('../tmc/images/tmc-prototype-background.png');
+		padding: 95px 0;
+		color: #48636E;
+		position: relative;
+		overflow: hidden;
+		z-index: 300;
+		h2{
+			margin-bottom: 30px;
+			text-align: left;
+			color: #48636E;
+		}
+		p{
+			width: 480px;
+		}
+		a{
+			background: rgba(255,255,255,.5);
+		}
+		img{
+			position: absolute;
+			top: 40px;
+			right: -40px;
+			box-shadow: 0 1px 3px rgba(0,0,0,.25);
+		}
+	}
+	#tmc-mobile-details{
+		background: #333;
+		.inner{
+			position: relative;
+			height: 385px;
+		}
+		img{
+			display: block;
+		}
+		#tmc-mobile-details-1{
+			position: absolute;
+			bottom: 0;
+			left: 40px;
+		}
+		#tmc-mobile-details-2{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -110px;
+		}
+		#tmc-mobile-details-3{
+			position: absolute;
+			bottom: 0;
+			right: 40px;
+		}
+	}
+}
+
 
 /* Role
 *************************************************/

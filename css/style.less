@@ -47,6 +47,10 @@ li{
 	margin: 0 auto;
 }
 
+section{
+	clear: both;
+}
+
 section h2{
 	text-align: center;
 	font-size: 30px;
@@ -104,6 +108,20 @@ a.custom-link:hover:after{
 	right: 1.2em;
 	opacity: 1;
 	.animation();
+}
+
+.iphone-screenshot{
+	display: block;
+	padding: 67px 15px 65px 18px;
+	position: relative;
+	background: url(../images/iphone-white.png) 50% 50% no-repeat;
+}
+
+.ipad-screenshot{
+	display: block;
+	padding: 35px 96px;
+	position: relative;
+	background: url(../images/ipad-white.png) 50% 50% no-repeat;
 }
 
 /* Header
@@ -363,10 +381,11 @@ header .contact:hover{
 
 #cookening-banner{
 	height: 480px;
+	background-color: black;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	margin-bottom: 40px;
+	margin: 0 auto 40px auto;
 	overflow: hidden;
 	position: relative;
 	video{
@@ -457,35 +476,6 @@ header .contact:hover{
 	margin-bottom: 40px;
 }
 
-#lec-tmc{
-	margin-bottom: 40px;
-}
-
-#lec-tmc h2{
-	margin-bottom: 40px;
-}
-
-#lec-tmc p{
-	width: 500px;
-	margin: 0 auto 2em;
-	
-}
-
-#lec-tmc-details{
-	overflow: auto;
-}
-
-
-#lec-tmc-details li{
-	display: block;
-	float: left;
-	margin-bottom: 20px;
-}
-
-#lec-tmc-details li:nth-child(2n){
-	margin-left: 30px;
-}
-
 #lec-misc{
 	background-color: #222;
 	padding: 50px 0 0;
@@ -528,10 +518,10 @@ header .contact:hover{
 		color: white;
 		text-align: left;
 		background: #FF7D40;
-		padding: 40px 0;
+		padding: 80px 0;
 		z-index: 500;
 		position: relative;
-		min-height: 250px;
+		min-height: 100px;
 		.inner{
 			position: relative;
 		}
@@ -544,7 +534,7 @@ header .contact:hover{
 		}
 		img{
 			position: absolute;
-			top: -90px;
+			top: -100px;
 			right: 0;
 		}
 	}
@@ -557,6 +547,9 @@ header .contact:hover{
 		position: relative;
 		overflow: hidden;
 		z-index: 300;
+		.inner{
+			position: relative;
+		}
 		h2{
 			margin-bottom: 30px;
 			text-align: left;
@@ -570,8 +563,8 @@ header .contact:hover{
 		}
 		img{
 			position: absolute;
-			top: 40px;
-			right: -40px;
+			top: -35px;
+			right: -115px;
 			box-shadow: 0 1px 3px rgba(0,0,0,.25);
 		}
 	}
@@ -599,6 +592,86 @@ header .contact:hover{
 			position: absolute;
 			bottom: 0;
 			right: 40px;
+		}
+	}
+}
+
+
+/* Liive
+*************************************************/
+#liive{
+	#liive-intro{
+		margin-bottom: 40px;
+	}
+	#liive-iphone-hero{
+		margin-bottom: 60px;
+		position: relative;
+		height: 460px;
+		background-image: -o-linear-gradient(143deg, #13D9BB 15%, #6CE7B9 91%);
+		background-image: -moz-linear-gradient(143deg, #13D9BB 15%, #6CE7B9 91%);
+		background-image: -ms-linear-gradient(143deg, #13D9BB 15%, #6CE7B9 91%);
+		background-image: linear-gradient(53deg, #13D9BB 15%, #6CE7B9 91%);
+		#liive-iphone-hero1{
+			position: absolute;
+			bottom: -40px;
+			right: 50%;
+			margin-right: -100px;
+		}
+		#liive-iphone-hero2{
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			margin-left: -100px;
+		}
+	}
+	#liive-iphone-features{
+		ul{
+			overflow: auto;
+			margin: 60px 0;
+			li{
+				width: 33.333%;
+				float: left;
+				padding: 0 55px;
+				box-sizing: border-box;
+				h3{
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				img{
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+	#liive-iphone-prototype{
+		color: white;
+		background: url('../liive/images/liive-prototype-background.png');
+		padding: 95px 0;
+		margin-bottom: 60px;
+		.inner{
+			position: relative;
+			padding-left: 500px;
+			box-sizing: border-box;
+		}
+		h2{
+			text-align: left;
+			color: white;
+		}
+		img{
+			position: absolute;
+			top: 0;
+			left: -50px;
+		}
+		a{
+			margin-right: 10px;
+		}
+	}
+	#liive-ipad{
+		h2{
+			margin-bottom: 40px;
+		}
+		li{
+			margin-bottom: 80px;
 		}
 	}
 }

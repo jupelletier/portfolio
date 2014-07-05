@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Julien Pelletier -  Liive</title>
+		
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../js/masonry.js"></script>
+		<script src="../js/script.js"></script>
+
+		<meta name="viewport" content="width=1100">
+
+	</head>
+
+	<body id="liive">
+		<header>
+			<div class="inner">
+				<a href="/" id="back-home">
+					<h1>Julien Pelletier</h1>
+					<br />
+					<h2>product designer</h2>
+				</a>
+				<a href="mailto:contact@julien-pelletier.fr" class="custom-link contact">contact</a>
+			</div>
+		</header>
+		<section id="cookening-banner">
+			<video autoplay="true" loop id="parallax">
+			  <source src="../video/cookening.m4v" type="video/mp4" />
+			</video>
+			<img src="../images/liive-logo.svg" width="250" id="parallaxImage" />
+		</section>
+		<section id="liive-intro">
+			<div class="inner-small">
+			<h2>iPhone application</h2>
+				<p>Liive aide les entrepreneurs dans leur gestion, en leur fournissant différents indicateurs, à piloter plus facilement leur entreprise. L'application est connectée au compte bancaire de l'entreprise et permet des échanges plus efficaces avec leur cabinet d'expertise comptable.<br />
+				Durant cette mission de 3 jours, nous aurons précisé et imaginé quelques features, conçu une interface graphique et réalisé un prototype à partir de mockups statiques.</p>
+			</div>
+		</section>
+		<section id="liive-iphone-hero">
+		<div class="inner">
+			<img src="images/liive-iphone-hero1.png" id="liive-iphone-hero1" alt="" />
+			<img src="images/liive-iphone-hero2.png" id="liive-iphone-hero2" alt="" />
+		</section>
+		<section id="liive-iphone-features">
+			<div class="inner">
+			<h2>Features</h2>
+				<ul>
+					<li>
+						<img src="images/liive-iphone-feature1.png" id="liive-iphone-feature1" class="iphone-screenshot" alt="" />
+						<h3>Annotation facile</h3>
+						<p>Il suffit d'un "swipe" de l'utilisateur sur une écriture d'extrait bancaire pour transmettre la nature de cette dépense ou de cette recette au cabinet.</p>
+					</li>
+					<li>
+						<img src="images/liive-iphone-feature2.png" id="liive-iphone-feature2" class="iphone-screenshot" alt="" />
+						<h3>Anticiper</h3>
+						<p>L'application offre la possibilité de transmettre rapidement des justificatifs de paiement et les lie automatiquement aux opérations bancaires correspondantes.</p>
+					</li>
+					<li>
+						<img src="images/liive-iphone-feature3.png" id="liive-iphone-feature3" class="iphone-screenshot" alt="" />
+						<h3>Clients</h3>
+						<p>L'utilisateur a la possibilité de voir la liste de ses clients et de faire le point sur ses factures non réglées. Une connexion à Linkedin permet d'afficher des informations supplémentaires.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="liive-iphone-prototype">
+			<div class="inner">
+				<h2>Prototyping</h2>
+				<p>En plus d'un prototype mobile créé avec Flinto, j'ai choisi d'utiliser Quartz Composer couplé à Origami pour exposer les quelques interactions et animations un peu plus élaborées.</p>
+				<a href="https://www.flinto.com/p/314e61f5" target="_blank" class="custom-link">View the prototype</a>
+				<a href="#" target="_blank" class="custom-link">Download .qtz files</a>
+				<img src="images/liive-prototype.png" />
+			</div>
+		</section>
+		<section id="liive-ipad">
+			<div class="inner">
+				<h2>iPad application</h2>
+				<ul>
+					<li>
+						<img src="images/liive-ipad1.png" id="liive-ipad1" class="ipad-screenshot" alt="" />
+					</li>
+					<li>
+						<img src="images/liive-ipad2.png" id="liive-ipad2" class="ipad-screenshot" alt="" />
+					</li>
+					<li>
+						<img src="images/liive-ipad3.png" id="liive-ipad3" class="ipad-screenshot" alt="" />
+					</li>
+					<li>
+						<img src="images/liive-ipad4.png" id="liive-ipad4" class="ipad-screenshot" alt="" />
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+
+		<section id="role">
+			<div class="inner">
+				<p>Role : Product designer</p>
+			</div>
+		</section>
+
+		<footer class="inner">
+			<ul>
+				<li><a href="http://www.twitter.com/jupelletier">Twitter</a></li>
+				<li><a href="mailto:contact@julien-pelletier.fr">Contact</a></li>
+				<li><a href="http://www.dribbble.com/jupelletier">Dribbble</a></li>
+				<li><a href="http://www.linkedin.com/in/jupelletier">Linkedin</a></li>
+			</ul>
+			© Julien Pelletier, 2014
+		</footer>
+
+		<script>
+			var parallax = document.getElementById("parallax");
+			var parallaxImage = document.getElementById("parallaxImage");
+			var speed = -2;
+
+			window.onscroll = function() {
+			  var yOffset = window.pageYOffset;
+			  parallax.style.top = (yOffset / speed) + "px";
+			  parallaxImage.style.opacity = 15 / (Math.abs(yOffset) + 1);
+			}
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-48757228-1', 'julien-pelletier.fr');
+		  ga('send', 'pageview');
+
+		</script>
+		
+	</body>
+</html>

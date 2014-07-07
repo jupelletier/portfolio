@@ -118,6 +118,31 @@ a.custom-link:hover:after {
   position: relative;
   background: url(../images/ipad-white.png) 50% 50% no-repeat;
 }
+.video-banner {
+  height: 480px;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+.video-banner video {
+  width: 100%;
+  max-width: 1440px;
+  margin-top: -100px;
+  z-index: 20;
+}
+.video-banner img {
+  margin-top: 180px;
+  position: absolute;
+  z-index: 30;
+  width: 200px;
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+}
 /* Header
 **************************************************/
 header {
@@ -159,7 +184,7 @@ header #back-home:after {
   left: 50%;
   margin-left: -25px;
   background: url('../images/home.svg') 50% 50% no-repeat;
-  border: 1px solid #ddd;
+  border: 1px solid #bbb;
   border-radius: 50px;
   background-size: 16px 16px;
   opacity: 0;
@@ -202,8 +227,7 @@ header .contact {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #888;
-  text-transform: uppercase;
+  color: #333;
   text-decoration: none;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
@@ -397,26 +421,9 @@ header .contact:hover {
 }
 /* Cookening
 **************************************************/
-#cookening-banner {
-  height: 480px;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0 auto 40px auto;
-  overflow: hidden;
-  position: relative;
-}
-#cookening-banner video {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 20;
-}
-#cookening-banner img {
-  margin-top: 180px;
-  position: relative;
-  z-index: 30;
+#cookening .video-banner img {
+  width: 400px;
+  margin-left: -200px;
 }
 #cookening p {
   margin-bottom: 2em;
@@ -468,7 +475,6 @@ header .contact:hover {
   margin-top: 40px;
   padding: 50px 0 25px;
   background: #27B5F1;
-  margin-bottom: 40px;
 }
 #lec-portail-hero {
   margin-top: 40px;
@@ -486,6 +492,10 @@ header .contact:hover {
 }
 /* TMC
 *************************************************/
+#tmc .video-banner img {
+  width: 400px;
+  margin-left: -200px;
+}
 #tmc #tmc-marketplace {
   padding-top: 60px;
   background: #f5f5f5;
@@ -637,6 +647,7 @@ header .contact:hover {
   color: white;
   background: url('../liive/images/liive-prototype-background.png');
   padding: 95px 0;
+  min-height: 220px;
   margin-bottom: 60px;
 }
 #liive #liive-iphone-prototype .inner {
@@ -654,7 +665,10 @@ header .contact:hover {
   left: -50px;
 }
 #liive #liive-iphone-prototype a {
-  margin-right: 10px;
+  position: absolute;
+}
+#liive #liive-iphone-prototype #qtz {
+  left: 700px;
 }
 #liive #liive-ipad h2 {
   margin-bottom: 40px;
